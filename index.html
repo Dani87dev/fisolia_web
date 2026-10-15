@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fisolia · Fisioterapia y Movimiento</title>
+  <meta name="description" content="Clínica de fisioterapia en Madrid. Tratamiento de lesiones deportivas, dolor de espalda, rehabilitación y pilates terapéutico.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== ICONOS (sprite SVG) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9L12 2.8Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 6.1 6.1l1.4-2.3L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5A16 16 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-metro" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M5 11h14M9 21l1.5-4M15 21l-1.5-4"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r="1" fill="currentColor"/><circle cx="16" cy="14.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 16V11l2-5h10l2 5v5M3 11h18M5 16h14v3H5zM7 16v3M17 16v3"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 20l1.3-3.9A8 8 0 1 1 8 19l-4 1Z"/></symbol>
+  </svg>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo" aria-label="Fisolia, inicio">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="12" fill="#1d5c58"/>
+          <path d="M14 15.5V30" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+          <path d="M14 15.5c4.5 0 9-1.4 12.5-4.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+          <path d="M14 22.5h9" stroke="#8fd6cb" stroke-width="3.4" stroke-linecap="round"/>
+          <circle cx="14" cy="9.2" r="3" fill="#e76f51"/>
+        </svg>
+        <span class="logo-text">Fisolia<small>Fisioterapia</small></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#clinica">Clínica</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#tarifas">Tarifas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#cita" class="btn btn-primary btn-sm">Pedir cita</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="eyebrow">Fisioterapia en Madrid · Chamberí</span>
+          <h1>Vuelve a moverte <em>sin dolor</em>.</h1>
+          <p class="lead">
+            Tratamientos personalizados para lesiones deportivas, dolor de espalda
+            y rehabilitación. Sesiones de 50 minutos, siempre con el mismo fisioterapeuta.
+          </p>
+          <div class="hero-actions">
+            <a href="#cita" class="btn btn-primary">Reservar primera visita</a>
+            <a href="#servicios" class="btn btn-ghost">Ver tratamientos →</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong data-count="12">0</strong><span>años de experiencia</span></li>
+            <li><strong data-count="3500" data-suffix="+">0</strong><span>pacientes tratados</span></li>
+            <li><strong data-count="98" data-suffix="%">0</strong><span>nos recomiendan</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal">
+          <img src="img/hero-fisio.jpg"
+               alt="Fisioterapeuta movilizando la pierna de un paciente" fetchpriority="high">
+
+          <div class="hero-chip chip-top">
+            <span class="dot dot-green"></span>
+            <span><strong>Hoy disponible</strong> · 17:30, 18:30</span>
+          </div>
+
+          <div class="hero-chip chip-bottom">
+            <strong class="chip-score">4,9</strong>
+            <span>
+              <span class="stars" aria-label="5 estrellas">
+                <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+              </span>
+              127 reseñas en Google
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MUTUAS ===== -->
+    <section class="insurers" aria-label="Mutuas con las que trabajamos">
+      <div class="container insurers-inner">
+        <p>Concierto con las principales mutuas</p>
+        <div class="marquee">
+          <ul class="marquee-track">
+            <li>Sanitas</li><li>Adeslas</li><li>DKV</li><li>Asisa</li><li>Mapfre</li><li>AXA</li><li>Cigna</li><li>Allianz</li><li>Caser</li>
+            <li aria-hidden="true">Sanitas</li><li aria-hidden="true">Adeslas</li><li aria-hidden="true">DKV</li><li aria-hidden="true">Asisa</li><li aria-hidden="true">Mapfre</li><li aria-hidden="true">AXA</li><li aria-hidden="true">Cigna</li><li aria-hidden="true">Allianz</li><li aria-hidden="true">Caser</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head section-head-split reveal">
+          <div>
+            <span class="eyebrow">Tratamientos</span>
+            <h2>Cuidamos cada parte de tu recuperación</h2>
+          </div>
+          <p>Combinamos terapia manual, ejercicio terapéutico y tecnología para que el resultado dure.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service service-lg reveal">
+            <img src="img/deportiva.jpg" alt="Fisioterapeuta aplicando vendaje neuromuscular en la espalda" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M13 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM6 22l3-8 3 2v6M15 22l-2-6M9 14l1-6 4 3 4-1"/></svg>
+              </span>
+              <h3>Fisioterapia deportiva</h3>
+              <p>Esguinces, roturas fibrilares, tendinopatías. Te devolvemos a la pista con un plan de retorno progresivo.</p>
+            </div>
+          </article>
+
+          <article class="service service-wide reveal">
+            <img src="img/espalda.jpg" alt="Fisioterapeuta valorando el hombro y la espalda de una paciente" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2v20M8 5h8M7 9h10M8 13h8M7 17h10M9 21h6"/></svg>
+              </span>
+              <h3>Dolor de espalda y cuello</h3>
+              <p>Lumbalgias, cervicalgias, ciática. Tratamos la causa, no solo el síntoma.</p>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <img src="img/rehabilitacion.jpg" alt="Fisioterapeuta movilizando el tobillo de un paciente" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 12h3l2-6 4 12 2-6h5"/></svg>
+              </span>
+              <h3>Rehabilitación postquirúrgica</h3>
+              <p>Rodilla, hombro, cadera. Coordinados con tu traumatólogo.</p>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <img src="img/puncion.jpg" alt="Terapia manual en camilla" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <h3>Punción seca y EPI</h3>
+              <p>Para puntos gatillo y tendones rebeldes.</p>
+            </div>
+          </article>
+
+          <article class="service service-wide reveal">
+            <img src="img/pilates.jpg" alt="Mujer haciendo pilates en reformer" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 18c3-6 6-9 9-9s6 3 9 9M7 18h10"/></svg>
+              </span>
+              <h3>Pilates terapéutico</h3>
+              <p>Grupos de máximo 4 personas. Fortalece tu core y previene recaídas.</p>
+            </div>
+          </article>
+
+          <article class="service service-wide reveal">
+            <img src="img/suelo-pelvico.jpg" alt="Fisioterapeuta tratando a una paciente tumbada en camilla" loading="lazy">
+            <div class="service-body">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11Z"/></svg>
+              </span>
+              <h3>Suelo pélvico</h3>
+              <p>Embarazo, postparto e incontinencia, en un espacio privado y cercano.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LA CLÍNICA ===== -->
+    <section class="section section-soft" id="clinica">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="img/clinica.jpg"
+               alt="Fisioterapeuta realizando un estiramiento de cadera en la clínica" loading="lazy">
+          <div class="about-badge">
+            <strong>1:1</strong>
+            <span>Un fisio, un paciente.<br>Siempre.</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="eyebrow">La clínica</span>
+          <h2>Un espacio luminoso pensado para moverse</h2>
+          <p>
+            200 m² en pleno Chamberí con sala de ejercicio terapéutico, estudio de pilates
+            y cabinas privadas. Aquí no hay pasillos llenos ni máquinas olvidadas en una esquina:
+            cada sesión es activa y contigo.
+          </p>
+          <ul class="checks">
+            <li>Fisioterapeutas colegiados y en formación continua</li>
+            <li>Ecografía para diagnóstico funcional</li>
+            <li>Factura para tu seguro o mutua</li>
+          </ul>
+          <a href="#equipo" class="btn btn-primary">Conoce al equipo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EQUIPO ===== -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section-head section-head-split reveal">
+          <div>
+            <span class="eyebrow">El equipo</span>
+            <h2>Las personas que te van a tratar</h2>
+          </div>
+          <p>Cuatro fisioterapeutas colegiados, cada uno especializado en un área. Desde la primera visita sabrás quién lleva tu caso.</p>
+        </div>
+
+        <div class="team">
+          <figure class="member reveal">
+            <div class="member-photo"><img src="img/equipo-lucia.jpg" alt="Lucía Herrero" loading="lazy"></div>
+            <figcaption>
+              <h3>Lucía Herrero</h3>
+              <p class="member-role">Directora · Fisioterapia deportiva</p>
+              <p class="member-col">Nº col. 10.482</p>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member-photo"><img src="img/equipo-pablo.jpg" alt="Pablo Navarro" loading="lazy"></div>
+            <figcaption>
+              <h3>Pablo Navarro</h3>
+              <p class="member-role">Rehabilitación postquirúrgica</p>
+              <p class="member-col">Nº col. 12.917</p>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member-photo"><img src="img/equipo-andres.jpg" alt="Andrés Molina" loading="lazy"></div>
+            <figcaption>
+              <h3>Andrés Molina</h3>
+              <p class="member-role">Punción seca y EPI</p>
+              <p class="member-col">Nº col. 11.356</p>
+            </figcaption>
+          </figure>
+          <figure class="member reveal">
+            <div class="member-photo"><img src="img/equipo-carmen.jpg" alt="Carmen Ibáñez" loading="lazy"></div>
+            <figcaption>
+              <h3>Carmen Ibáñez</h3>
+              <p class="member-role">Suelo pélvico · Pilates</p>
+              <p class="member-col">Nº col. 13.204</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MÉTODO ===== -->
+    <section class="section section-dark" id="metodo">
+      <div class="container method-grid">
+        <div class="reveal">
+          <span class="eyebrow eyebrow-light">Nuestro método</span>
+          <h2>Tres pasos. Cero sesiones de relleno.</h2>
+          <p class="muted-light">
+            Sabemos que tu tiempo vale. Por eso cada sesión tiene un objetivo claro
+            y te damos el alta en cuanto ya no nos necesitas.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Valoración completa</h3>
+              <p>Historia clínica, pruebas funcionales y análisis de movimiento para entender qué está pasando.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Tratamiento a medida</h3>
+              <p>Terapia manual y ejercicio adaptados a ti, con objetivos medibles semana a semana.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Autonomía</h3>
+              <p>Te llevas un programa de ejercicios en el móvil para que no vuelvas a recaer.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== OPINIONES ===== -->
+    <section class="section" id="opiniones">
+      <div class="container">
+        <div class="section-head section-head-split reveal">
+          <div>
+            <span class="eyebrow">Opiniones</span>
+            <h2>Lo que dicen nuestros pacientes</h2>
+          </div>
+          <div class="rating-summary">
+            <strong>4,9</strong>
+            <div>
+              <span class="stars" aria-label="5 estrellas">
+                <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+              </span>
+              <small>127 reseñas verificadas en Google</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <figure class="testimonial reveal">
+            <span class="stars" aria-label="5 estrellas">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <blockquote>“Llevaba dos años con dolor lumbar y en seis sesiones volví a correr. Explican todo y te enseñan a cuidarte.”</blockquote>
+            <figcaption><span class="avatar" style="--c:#2a9d8f">L</span> Laura M. <small>hace 2 semanas</small></figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <span class="stars" aria-label="5 estrellas">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <blockquote>“Tras la operación de rodilla pensé que no volvería a jugar al pádel. Pablo lo consiguió en cuatro meses.”</blockquote>
+            <figcaption><span class="avatar" style="--c:#e76f51">J</span> Javier R. <small>hace 1 mes</small></figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <span class="stars" aria-label="5 estrellas">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <blockquote>“Trato cercanísimo y una clínica preciosa. El pilates en grupo pequeño es lo mejor que he hecho por mi espalda.”</blockquote>
+            <figcaption><span class="avatar" style="--c:#f4a261">M</span> Marta G. <small>hace 3 meses</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TARIFAS ===== -->
+    <section class="section section-soft" id="tarifas">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Tarifas</span>
+          <h2>Precios claros, sin sorpresas</h2>
+        </div>
+
+        <div class="pricing">
+          <div class="price-card reveal">
+            <h3>Sesión individual</h3>
+            <p class="price"><span>45€</span>/ sesión</p>
+            <ul>
+              <li>50 minutos</li>
+              <li>Fisioterapeuta asignado</li>
+              <li>Plan de ejercicios</li>
+            </ul>
+            <a href="#cita" class="btn btn-ghost btn-block">Reservar</a>
+          </div>
+
+          <div class="price-card featured reveal">
+            <span class="badge">Más elegido</span>
+            <h3>Bono 5 sesiones</h3>
+            <p class="price"><span>200€</span>/ bono</p>
+            <ul>
+              <li>Ahorra 25€</li>
+              <li>Valoración inicial incluida</li>
+              <li>Seguimiento por WhatsApp</li>
+              <li>Válido 3 meses</li>
+            </ul>
+            <a href="#cita" class="btn btn-primary btn-block">Reservar</a>
+          </div>
+
+          <div class="price-card reveal">
+            <h3>Pilates terapéutico</h3>
+            <p class="price"><span>70€</span>/ mes</p>
+            <ul>
+              <li>2 clases por semana</li>
+              <li>Máximo 4 personas</li>
+              <li>Supervisado por fisio</li>
+            </ul>
+            <a href="#cita" class="btn btn-ghost btn-block">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Antes de tu primera visita</h2>
+          <p>¿No encuentras lo que buscas? Llámanos al <a href="tel:910000000">910 000 000</a> y te lo resolvemos en un minuto.</p>
+        </div>
+
+        <div class="faq-list reveal" id="faqList">
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-1">¿Necesito un informe o prescripción médica?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-1"><div><p>No. Puedes venir directamente: en la primera sesión hacemos una valoración completa. Si tienes pruebas o informes previos, tráelos, nos ayudan a afinar el tratamiento.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-2">¿Trabajáis con mutuas o seguros?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-2"><div><p>Sí. Tenemos concierto con las principales mutuas y, si la tuya no está, te damos factura detallada para que solicites el reembolso.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-3">¿Qué tengo que llevar a la primera sesión?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-3"><div><p>Ropa cómoda que te permita moverte y dejar al descubierto la zona a tratar. Nosotros ponemos toallas y todo el material.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-4">¿Cuántas sesiones voy a necesitar?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-4"><div><p>Depende de la lesión, pero tras la valoración te damos una estimación realista. La mayoría de nuestros pacientes reciben el alta en 4–6 sesiones.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-5">¿La punción seca duele?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-5"><div><p>Se nota una molestia breve, parecida a un pequeño calambre, cuando la aguja llega al punto gatillo. Después suele aparecer alivio. Siempre te explicamos cada paso antes.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" aria-expanded="false" aria-controls="faq-6">¿Puedo cambiar o cancelar mi cita?<span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="faq-6"><div><p>Claro. Avísanos con al menos 24 horas de antelación por teléfono o WhatsApp y la movemos sin ningún coste.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CÓMO LLEGAR ===== -->
+    <section class="section section-soft" id="ubicacion">
+      <div class="container location-grid">
+        <div class="location-info reveal">
+          <span class="eyebrow">Cómo llegar</span>
+          <h2>En pleno Chamberí</h2>
+          <p class="location-address">
+            <svg class="icon"><use href="#i-pin"/></svg>
+            Calle de Fuencarral 123, 28010 Madrid
+          </p>
+          <ul class="transport">
+            <li><svg class="icon"><use href="#i-metro"/></svg><div><strong>Metro Bilbao</strong><span>L1 · L4 — 4 min andando</span></div></li>
+            <li><svg class="icon"><use href="#i-metro"/></svg><div><strong>Metro Quevedo</strong><span>L2 — 6 min andando</span></div></li>
+            <li><svg class="icon"><use href="#i-bus"/></svg><div><strong>Autobús</strong><span>Líneas 21, 147 y 149</span></div></li>
+            <li><svg class="icon"><use href="#i-car"/></svg><div><strong>Parking público</strong><span>A 100 m, en la misma calle</span></div></li>
+          </ul>
+        </div>
+        <div class="map reveal">
+          <iframe
+            title="Mapa de la ubicación de la clínica"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7090%2C40.4280%2C-3.6950%2C40.4345&amp;layer=mapnik&amp;marker=40.4312%2C-3.7021"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CITA ===== -->
+    <section class="section" id="cita">
+      <div class="container booking reveal">
+        <div class="booking-info">
+          <span class="eyebrow eyebrow-light">Pide tu cita</span>
+          <h2>Tu primera valoración, hoy mismo</h2>
+          <p>Déjanos tus datos y te llamamos en menos de 2 horas para cerrar el horario que mejor te venga.</p>
+
+          <ul class="contact-list">
+            <li><svg class="icon"><use href="#i-pin"/></svg> Calle de Fuencarral 123, Madrid</li>
+            <li><svg class="icon"><use href="#i-phone"/></svg> 910 000 000</li>
+            <li><svg class="icon"><use href="#i-clock"/></svg> L–V 8:00–21:00 · S 9:00–14:00</li>
+          </ul>
+        </div>
+
+        <form class="booking-form" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="600 000 000" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="service">Motivo de consulta</label>
+            <select id="service" name="service">
+              <option>Fisioterapia deportiva</option>
+              <option>Dolor de espalda y cuello</option>
+              <option>Rehabilitación postquirúrgica</option>
+              <option>Punción seca y EPI</option>
+              <option>Pilates terapéutico</option>
+              <option>Suelo pélvico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <fieldset class="field">
+            <legend>¿Cuándo te viene mejor?</legend>
+            <div class="pills">
+              <label><input type="radio" name="slot" value="mañana" checked><span>Mañana</span></label>
+              <label><input type="radio" name="slot" value="tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="slot" value="indiferente"><span>Me da igual</span></label>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary btn-block">Solicitar cita</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="Fisolia, inicio">
+          <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect width="40" height="40" rx="12" fill="#2a9d8f"/>
+            <path d="M14 15.5V30" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <path d="M14 15.5c4.5 0 9-1.4 12.5-4.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+            <path d="M14 22.5h9" stroke="#dff1ee" stroke-width="3.4" stroke-linecap="round"/>
+            <circle cx="14" cy="9.2" r="3" fill="#e76f51"/>
+          </svg>
+          <span class="logo-text">Fisolia<small>Fisioterapia</small></span>
+        </a>
+        <p>Fisioterapia activa y personalizada en el corazón de Chamberí, desde 2014.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg><use href="#i-chat"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Clínica</h4>
+        <ul>
+          <li><a href="#servicios">Tratamientos</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#tarifas">Tarifas</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>Calle de Fuencarral 123<br>28010 Madrid</li>
+          <li><a href="tel:910000000">910 000 000</a></li>
+          <li><a href="mailto:hola@fisolia.es">hola@fisolia.es</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Horario</h4>
+        <ul class="hours">
+          <li><span>Lunes – Viernes</span><span>8:00 – 21:00</span></li>
+          <li><span>Sábados</span><span>9:00 – 14:00</span></li>
+          <li><span>Domingos</span><span>Cerrado</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Fisolia Fisioterapia</p>
+      <p class="footer-credit">Clínica ficticia · proyecto de portafolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="40" height="40" rx="12" fill="#1d5c58"/>
+  <!-- "F" que es a la vez una persona con los brazos abiertos -->
+  <path d="M14 15.5V30" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M14 15.5c4.5 0 9-1.4 12.5-4.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M14 22.5h9" stroke="#8fd6cb" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="14" cy="9.2" r="3" fill="#e76f51"/>
+</svg>
